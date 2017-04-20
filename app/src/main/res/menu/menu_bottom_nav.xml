@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/bottom_nav_zhuye"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/zhuye"
+        android:icon="@drawable/vector_drawable_home"/>
+
+    <item android:id="@+id/bottom_nav_faxian"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/faxian"
+        android:icon="@drawable/vector_drawable_finding"/>
+
+    <item android:id="@+id/bottom_nav_zhibo"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/zhibo"
+        android:icon="@drawable/vector_drawable_game"/>
+
+    <item android:id="@+id/bottom_nav_more"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/more"
+        android:icon="@drawable/vector_drawable_more"/>
+</menu>

@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.go.kd.dotainfo"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'org.litepal.android:core:1.3.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    //compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+}
